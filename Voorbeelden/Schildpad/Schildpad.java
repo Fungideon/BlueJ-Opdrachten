@@ -35,13 +35,134 @@ public class Schildpad {
     kleur = "groen";
   }
 
-  // Methoden
-  // Plaats hieronder de methode tekenVierkant():
-
-
-
-
-
+  /**
+   * Laat de schildpad een vierkant tekenen.
+   */
+  public void tekenVierkant(){
+      penNeer();
+      vooruit(50);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(50);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(50);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(50);
+      draaiRechts(90);
+      slaap(100);
+    }
+    
+  /**
+   * Laat de schildpad een vierkant tekenen.
+   * @param zijde de grote van het vierkant.
+   */
+  public void tekenVierkant(int zijde){
+      penNeer();
+      vooruit(zijde);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(zijde);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(zijde);
+      draaiRechts(90);
+      slaap(100);
+      
+      vooruit(zijde);
+      draaiRechts(90);
+      slaap(100);
+    }
+    
+  /**
+   * Laat de schildpad een Driehoek tekenen.
+   */
+  public void tekenDriehoek(){
+      penNeer();
+      setRichting(60);
+      vooruit(50);
+      slaap(100);
+      
+      draaiRechts(120);
+      vooruit(50);
+      slaap(100);
+      
+      draaiRechts(120);
+      vooruit(50);
+      slaap(100);
+    }
+    
+  /**
+   * Laat de schildpad een Driehoek tekenen.
+   * @param zijde de lengte van de zijden van de Driehoek.
+   */
+  public void tekenDriehoek( int zijde){
+      penNeer();
+      setRichting(60);
+      vooruit(zijde);
+      slaap(100);
+      
+      draaiRechts(120);
+      vooruit(zijde);
+      slaap(100);
+      
+      draaiRechts(120);
+      vooruit(zijde);
+      slaap(100);
+    }
+    
+  /**
+   * Laat de schildpad een simpel huisje tekenen.
+   */
+  public void tekenHuis(int zijde){
+      tekenVierkant(zijde);
+      vooruit(zijde);
+      tekenDriehoek(zijde);
+      reset();
+    }
+    
+  /**
+   * Laat de schildpad een 4 (overlappende) huisen tekenen.
+   */
+  public void vierHuizen(){
+      tekenHuis(50);
+      tekenHuis(70);
+      tekenHuis(90);
+      tekenHuis(110);
+    }
+    
+  /**
+   * Laat de schildpad een klein dorpje tekenen met huisjes op verschillende plekken met verschillende kleuren.
+   */
+  public void tekenDorp(){
+      double huisx = xDefault;
+      tekenHuis(50);
+      huisx = huisx + 60;
+      
+      gaNaar(huisx, yDefault + 10);
+      setKleur("rood");
+      tekenHuis(40);
+      huisx = huisx + 50;
+      
+      gaNaar(huisx, yDefault - 50);
+      setKleur("blauw");
+      tekenHuis(30);
+      huisx = huisx + 40;
+      
+      gaNaar(huisx, yDefault + 66);
+      setKleur("geel");
+      tekenHuis(20);
+      
+      gaNaar(xDefault - 90, yDefault - 44);
+      setKleur("zwart");
+      tekenHuis(60);
+    }
   // Hierboven kun je zelf methoden toevoegen
   /**
    * Laat de schildpad een stukje x achteruit lopen
