@@ -1,2 +1,2 @@
 # BlueJ-Opdrachten
-sudo rm -rf /
+Hierin staan de opdrachten die ik heb gemaakt in BlueJ
