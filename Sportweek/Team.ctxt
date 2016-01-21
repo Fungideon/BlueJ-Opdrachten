@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=lid1\ lid2
+comment0.target=Team(Leerling,\ Leerling)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Team\r\n
+comment1.params=
+comment1.target=void\ print()
+numComments=2

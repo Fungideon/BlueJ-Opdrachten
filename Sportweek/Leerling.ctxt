@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=naam\ klas\ geslacht\ nummer
+comment0.target=Leerling(java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getNaam()
+comment2.params=
+comment2.target=java.lang.String\ getKlas()
+comment3.params=
+comment3.target=java.lang.String\ getGeslacht()
+comment4.params=
+comment4.target=int\ getNummer()
+comment5.params=naam
+comment5.target=void\ setNaam(java.lang.String)
+comment6.params=klas
+comment6.target=void\ setKlas(java.lang.String)
+comment7.params=geslacht
+comment7.target=void\ setGeslacht(java.lang.String)
+comment8.params=nummer
+comment8.target=void\ setNummer(int)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10
